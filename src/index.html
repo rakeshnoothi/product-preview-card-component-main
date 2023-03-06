@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="../public/output.css">
+</head>
+
+<body
+  class="h-screen flex justify-center items-center font-montserrat font-regular text-[0.875rem] bg-primaryCream px-3 ">
+  <!-- card -->
+  <main class="bg-neutralWhite rounded-lg overflow-hidden md:grid grid-cols-2 max-w-[704px]">
+    <!-- image section -->
+    <section>
+      <picture>
+        <source media="(min-width:704px)" srcset="../images/image-product-desktop.jpg" alt="image-product-desktop">
+        <img src="../images/image-product-mobile.jpg" alt="image-product-mobile">
+      </picture>
+    </section>
+
+    <!-- content section -->
+    <section class="flex flex-col p-5 gap-4 md:p-8 md:gap-10">
+      <!-- product catogory -->
+      <p class="uppercase text-neutralDarkGrayishBlue tracking-[0.3em]">Perfume</p>
+      <!-- product name -->
+      <p class="text-3xl font-bold font-fraunces leading-7 md:text-4xl">Gabrielle Essence Eau De Parfum</p>
+      <!-- product description -->
+      <p class="text-neutralDarkGrayishBlue">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <!-- product pricing -->
+      <div class="space-x-3 flex items-center">
+        <span class="text-primaryDarkCyan text-3xl font-fraunces">$149.99</span>
+        <span class="line-through">$169.99</span>
+      </div>
+      <!-- product button -->
+      <button type="button"
+        class="bg-primaryDarkCyan flex justify-center gap-2 py-3 rounded-lg items-center font-bold hover:bg-gree">
+        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+            fill="#FFF" />
+        </svg>
+        <span class="text-neutralWhite">Add to Cart</span>
+      </button>
+    </section>
+
+  </main>
+</body>
+
+</html>
